@@ -32,7 +32,7 @@ def main():
     # create a new hash object
     h = SHA256.new()
     # TODO: construct message, H(key) + encrypted_data
-    message = ''
+    message = h_key + encrypted_data
     # update hash with the message for HMAC
     h.update(message)
     # the resulting hash is HMAC = H(H(key) + encrypted_data)
